@@ -7,7 +7,8 @@ RUN \
 #    npm init -y
 RUN \
     npm install -g bower && \
-    npm install -g mysql
+    npm install -g mysql && \
+    npm install -g npm
 RUN \
     npm install express --save
 
