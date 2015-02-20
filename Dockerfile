@@ -1,9 +1,11 @@
 FROM shinymayhem/node
 
 RUN \
+    mkdir -p /opt/node && \
+    cd /opt/node && \
     npm install -g bower && \
-    npm install -g express && \
-    npm install -g mysql
+    npm install -g mysql && \
+    npm install express --save
 
 VOLUME /opt/node
 
