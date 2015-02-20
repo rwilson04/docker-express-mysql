@@ -5,6 +5,8 @@ RUN \
     npm install -g express && \
     npm install -g mysql
 
+VOLUME /opt/node
+
 WORKDIR /opt/node
 
 EXPOSE 80
