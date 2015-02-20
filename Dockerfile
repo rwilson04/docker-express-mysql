@@ -3,6 +3,7 @@ FROM shinymayhem/node
 RUN \
     mkdir -p /opt/node && \
     cd /opt/node && \
+    npm init -y && \
     npm install -g bower && \
     npm install -g mysql && \
     npm install express --save
