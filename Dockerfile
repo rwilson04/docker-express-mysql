@@ -11,9 +11,10 @@ WORKDIR /opt/node
 
 EXPOSE 80
 
-ENV DB_HOST blank
-ENV DB_PASS blank
-ENV DB_NAME blank
-ENV DB_PORT blank
+ENV DB_HOST changeme
+ENV DB_USER changeme
+ENV DB_PASS changeme
+ENV DB_NAME changeme
+ENV DB_PORT changeme
 
 CMD sh -c 'node index.js'
