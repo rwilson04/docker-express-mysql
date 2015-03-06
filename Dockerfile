@@ -1,27 +1,10 @@
-FROM shinymayhem/node
+FROM shinymayhem/express
 
 RUN \
-    mkdir -p /opt/node && \
-    cd /opt/node
-#RUN \
-#    npm init -y
-RUN \
-    npm install -g bower && \
-    npm install -g mysql && \
-    npm install -g npm
-RUN \
-    npm install express --save
-
-VOLUME /opt/node
-
-WORKDIR /opt/node
-
-EXPOSE 80
+    npm install -g mysql
 
 ENV DB_HOST changeme
 ENV DB_USER changeme
 ENV DB_PASS changeme
 ENV DB_NAME changeme
 ENV DB_PORT changeme
-
-CMD sh -c 'node index.js'
