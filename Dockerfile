@@ -1,7 +1,7 @@
 FROM shinymayhem/express
 
 RUN \
-    npm install -g mysql
+    npm install mysql
 
 ENV DB_HOST changeme
 ENV DB_USER changeme
